@@ -1,0 +1,179 @@
+[class*="col-"] {
+    width: 100%;
+}
+
+nav #menu li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 50px;
+}
+
+.todo {
+    color: red;
+}
+span{
+    color: red;
+    margin-top: 0.4%;
+}
+
+nav #menu li {
+    margin: 25px 11.5px 15px 11.5px;
+}
+
+ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    width: 100%;
+    margin: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(80, 80, 202);
+}
+
+#tieude {
+    background-color: rgb(165, 150, 65);
+}
+
+#menu {
+    display: block;
+    box-sizing: border-box;
+    height: 85px;
+    font-size: 50%;
+    align-items: center;
+}
+
+nav #menu .left {
+    float: left;
+}
+
+nav #menu .right {
+    float: right;
+}
+
+#menu a:hover {
+    color: tomato;
+}
+
+h1 {
+    margin-top: 6%;
+    text-transform: uppercase;
+    color: rgb(46, 108, 224);
+    font-size: 150%;
+}
+
+form {
+    text-align: center;
+    font-weight: bold;
+}
+
+form input {
+    margin-top: 1.5%;
+}
+
+table {
+    width: 100%;
+    margin-top: 1.5%;
+    text-align: center;
+}
+
+.button {
+    background-color: #1c4db8;
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+#tentruong {
+    margin-top: 2%;
+}
+
+#truong, #namhoc {
+    border: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 95%;
+    color: rgb(46, 108, 224);
+}
+
+#yeucau {
+    margin-top: 2%;
+    text-align: center;
+}
+
+button:hover {
+    color: rgb(206, 219, 13);
+}
+
+@media only screen and (min-width: 768px) {
+    #truong, #namhoc {
+        font-size: 120%;
+        margin-top: 1%;
+    }
+    nav {
+        height: 95px;
+    }
+    #menu {
+        font-size: 75%;
+    }
+    nav #menu li a {
+        line-height: 70px;
+    }
+    h1 {
+        margin-top: 6%;
+        font-size: 230%;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    #truong, #namhoc {
+        font-size: 150%;
+        margin-top: 1%;
+    }
+    nav #menu li a {
+        line-height: 50px;
+    }
+    nav {
+        height: 85px;
+    }
+    #menu {
+        padding-top: 40px;
+        height: 50px;
+        font-size: 100%;
+        display: block;
+    }
+    nav #menu li:hover a {
+        background: none;
+        transition: none;
+    }
+    ul {
+        padding-right: 75px;
+        padding-left: 75px;
+    }
+    nav #menu li {
+        margin: 0 0 0 0;
+    }
+    nav #menu li a {
+        color: white;
+        padding: 10px;
+        line-height: 0;
+    }
+    .button {
+        margin-top: 2%;
+        margin-bottom: 0%;
+    }
+    h1 {
+        margin-top: 4%;
+    }
+}

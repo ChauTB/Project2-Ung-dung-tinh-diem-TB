@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project 3.css" type="text/css">
+    <title>Project 3</title>
+</head>
+
+<body>
+    <div class="col-all">
+        <div class="menu">
+            <nav>
+                <ul id="menu">
+                    <li class="left"><a href="#">Sổ điểm Online</a></li>
+                    <li class="right"><a href="#">Hỗ trợ</a></li>
+                    <li class="right"><a href="#">Đăng nhập</a></li>
+                    <li class="right"><a href="#">Đăng ký</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="tentruong">
+            <input type="text" id="truong" placeholder="Hãy nhập tên trường"></input><br>
+            <input type="text" id="namhoc" placeholder="Hãy nhập năm học"></input>
+        </div>
+        <form>
+            <h1>Bảng điểm lớp học</h1>
+            <div>
+                Họ tên: <input id="ten" type="text"><br>
+                <span class="loiten" style="display: none"></span>
+                Điểm toán: <input id="toan" type="number"><br>
+                <span class="loidiemtoan" style="display: none"></span>
+                Điểm lý: <input id="ly" type="number"><br>
+                <span class="loidiemly" style="display: none"></span>
+                Điểm hóa: <input id="hoa" type="number"><br>
+                <span class="loidiemhoa" style="display: none"></span>
+                <button class="button button1" type="button">Nhập</button>
+            </div>
+        </form>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="Project 3.js"></script>
+        <table id="bangdiem" border="1">
+            <thead>
+                <tr id="tieude">
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th>Toán</th>
+                    <th>Lý</th>
+                    <th>Hóa</th>
+                    <th>Trung bình</th>
+                </tr>
+            </thead>
+            <tbody class="bangdiem">
+
+            </tbody>
+        </table>
+        <div id="yeucau"><button class="button button2" type="button">Tính điểm trung
+                bình</button> <button class="button button3" type="button">Xác định
+                học sinh giỏi</button> <button class="button button4" type="button">Xóa dữ liệu học
+                sinh</button> <button class="button" type="button" onclick="print()">In bảng điểm</button>
+            <button class="button button5" type="reset">Reset</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
